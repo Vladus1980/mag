@@ -30,6 +30,7 @@ public class UserDao {
 		preparedStatemant.setInt(3, user.getUser_age());
 		preparedStatemant.setString(4, user.getUser_email());
 		preparedStatemant.setString(5, user.getUser_pass());
+		preparedStatemant.setString(6, user.getUser_level());
 		preparedStatemant.executeUpdate();
 	}
 
@@ -50,7 +51,8 @@ public class UserDao {
 		preparedStatemant.setInt(3, user.getUser_age());
 		preparedStatemant.setString(4, user.getUser_email());
 		preparedStatemant.setString(5, user.getUser_pass());
-		preparedStatemant.setInt(6, user.getId());
+		preparedStatemant.setString(6, user.getUser_level());
+		preparedStatemant.setInt(7, user.getId());
 		preparedStatemant.executeUpdate();
 	}
 	

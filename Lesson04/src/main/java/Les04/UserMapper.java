@@ -12,8 +12,9 @@ public class UserMapper {
 		int user_age = result.getInt("user_age");
 		String user_email = result.getString("user_email");
 		String user_pass = result.getString("user_pass");
+		String user_level = result.getString("user_level");
 		
-		return new User (user_firstname, user_lastname, user_age, user_email, user_pass);
+		return new User (user_firstname, user_lastname, user_age, user_email, user_pass, user_level);
 		
 	}
 
